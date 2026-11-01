@@ -3,8 +3,6 @@
 
 🌐 **Live Website:** https://devbhoomi-escapes-i1cb.onrender.com/home
 
-📂 **GitHub Repository:** https://github.com/tapursingh2843/tapur_2843_IILMGN_GenAI
-
 ---
 
 ## 📌 About the Project
