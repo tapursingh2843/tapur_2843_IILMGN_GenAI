@@ -1,0 +1,1177 @@
+[
+  {
+    "destination_id": "manali",
+    "checkpoints": [
+      {
+        "id": "m-cp1",
+        "name": "Base: Mall Road Acclimatization",
+        "lat": 32.2396,
+        "lng": 77.1887,
+        "order": 1
+      },
+      {
+        "id": "m-cp2",
+        "name": "Hadimba Meadow Junction",
+        "lat": 32.2489,
+        "lng": 77.1854,
+        "order": 2
+      },
+      {
+        "id": "m-cp3",
+        "name": "Solang Valley Mid-point",
+        "lat": 32.3167,
+        "lng": 77.1583,
+        "order": 3
+      },
+      {
+        "id": "m-cp4",
+        "name": "Rohtang Approach Camp",
+        "lat": 32.3644,
+        "lng": 77.1333,
+        "order": 4
+      },
+      {
+        "id": "m-cp5",
+        "name": "High Ridge Viewpoint",
+        "lat": 32.38,
+        "lng": 77.12,
+        "order": 5
+      },
+      {
+        "id": "m-cp6",
+        "name": "Summit: Snowline Overlook",
+        "lat": 32.39,
+        "lng": 77.11,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "leh-ladakh",
+    "checkpoints": [
+      {
+        "id": "l-cp1",
+        "name": "Leh Acclimatization Base",
+        "lat": 34.1526,
+        "lng": 77.5771,
+        "order": 1
+      },
+      {
+        "id": "l-cp2",
+        "name": "Shanti Stupa Trail Fork",
+        "lat": 34.173,
+        "lng": 77.574,
+        "order": 2
+      },
+      {
+        "id": "l-cp3",
+        "name": "Khardung La Approach",
+        "lat": 34.118,
+        "lng": 77.562,
+        "order": 3
+      },
+      {
+        "id": "l-cp4",
+        "name": "Nubra Sand Dunes Camp",
+        "lat": 34.28,
+        "lng": 77.62,
+        "order": 4
+      },
+      {
+        "id": "l-cp5",
+        "name": "Diskit Monastery Ridge",
+        "lat": 34.4216,
+        "lng": 77.5465,
+        "order": 5
+      },
+      {
+        "id": "l-cp6",
+        "name": "Pangong View Final Camp",
+        "lat": 33.9423,
+        "lng": 78.6429,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "kedarnath",
+    "checkpoints": [
+      {
+        "id": "k-cp1",
+        "name": "Gaurikund Base Camp",
+        "lat": 30.6489,
+        "lng": 79.0321,
+        "order": 1
+      },
+      {
+        "id": "k-cp2",
+        "name": "Jungle Chatti",
+        "lat": 30.67,
+        "lng": 79.045,
+        "order": 2
+      },
+      {
+        "id": "k-cp3",
+        "name": "Bheembali Rest Point",
+        "lat": 30.69,
+        "lng": 79.055,
+        "order": 3
+      },
+      {
+        "id": "k-cp4",
+        "name": "Rambara Bridge",
+        "lat": 30.705,
+        "lng": 79.06,
+        "order": 4
+      },
+      {
+        "id": "k-cp5",
+        "name": "Lincholi Plateau",
+        "lat": 30.715,
+        "lng": 79.065,
+        "order": 5
+      },
+      {
+        "id": "k-cp6",
+        "name": "Kedarnath Temple Precinct",
+        "lat": 30.7353,
+        "lng": 79.0669,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "badrinath",
+    "checkpoints": [
+      {
+        "id": "b-cp1",
+        "name": "Badrinath Town Base",
+        "lat": 30.7433,
+        "lng": 79.4938,
+        "order": 1
+      },
+      {
+        "id": "b-cp2",
+        "name": "Tapt Kund Steps",
+        "lat": 30.744,
+        "lng": 79.4945,
+        "order": 2
+      },
+      {
+        "id": "b-cp3",
+        "name": "Temple Plaza",
+        "lat": 30.7435,
+        "lng": 79.494,
+        "order": 3
+      },
+      {
+        "id": "b-cp4",
+        "name": "Narad Kund Path",
+        "lat": 30.7442,
+        "lng": 79.4935,
+        "order": 4
+      },
+      {
+        "id": "b-cp5",
+        "name": "Mana Village Gateway",
+        "lat": 30.7704,
+        "lng": 79.4925,
+        "order": 5
+      },
+      {
+        "id": "b-cp6",
+        "name": "Vyas Gufa Overlook",
+        "lat": 30.775,
+        "lng": 79.49,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "auli",
+    "checkpoints": [
+      {
+        "id": "a-cp1",
+        "name": "Joshimath Cable Base",
+        "lat": 30.555,
+        "lng": 79.565,
+        "order": 1
+      },
+      {
+        "id": "a-cp2",
+        "name": "Lower Meadow Station",
+        "lat": 30.53,
+        "lng": 79.563,
+        "order": 2
+      },
+      {
+        "id": "a-cp3",
+        "name": "Ski Slope Mid-station",
+        "lat": 30.5285,
+        "lng": 79.5645,
+        "order": 3
+      },
+      {
+        "id": "a-cp4",
+        "name": "Gorson Bugyal Trailhead",
+        "lat": 30.527,
+        "lng": 79.57,
+        "order": 4
+      },
+      {
+        "id": "a-cp5",
+        "name": "Sunset Ridge Point",
+        "lat": 30.526,
+        "lng": 79.572,
+        "order": 5
+      },
+      {
+        "id": "a-cp6",
+        "name": "Nanda Devi View Final",
+        "lat": 30.5287,
+        "lng": 79.5629,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "mussoorie",
+    "checkpoints": [
+      {
+        "id": "musso-cp1",
+        "name": "Base: Mussoorie",
+        "lat": 30.4598,
+        "lng": 78.0584,
+        "order": 1
+      },
+      {
+        "id": "musso-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.4654,
+        "lng": 78.0644,
+        "order": 2
+      },
+      {
+        "id": "musso-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.471,
+        "lng": 78.0704,
+        "order": 3
+      },
+      {
+        "id": "musso-cp4",
+        "name": "Trail junction",
+        "lat": 30.4766,
+        "lng": 78.0584,
+        "order": 4
+      },
+      {
+        "id": "musso-cp5",
+        "name": "High camp approach",
+        "lat": 30.4822,
+        "lng": 78.0644,
+        "order": 5
+      },
+      {
+        "id": "musso-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.4878,
+        "lng": 78.0704,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "nainital",
+    "checkpoints": [
+      {
+        "id": "naini-cp1",
+        "name": "Base: Nainital",
+        "lat": 29.3803,
+        "lng": 79.4576,
+        "order": 1
+      },
+      {
+        "id": "naini-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.3859,
+        "lng": 79.4636,
+        "order": 2
+      },
+      {
+        "id": "naini-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.3915,
+        "lng": 79.4696,
+        "order": 3
+      },
+      {
+        "id": "naini-cp4",
+        "name": "Trail junction",
+        "lat": 29.3971,
+        "lng": 79.4576,
+        "order": 4
+      },
+      {
+        "id": "naini-cp5",
+        "name": "High camp approach",
+        "lat": 29.4027,
+        "lng": 79.4636,
+        "order": 5
+      },
+      {
+        "id": "naini-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.4083,
+        "lng": 79.4696,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "rishikesh",
+    "checkpoints": [
+      {
+        "id": "rishi-cp1",
+        "name": "Base: Rishikesh",
+        "lat": 30.0869,
+        "lng": 78.2616,
+        "order": 1
+      },
+      {
+        "id": "rishi-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.0925,
+        "lng": 78.2676,
+        "order": 2
+      },
+      {
+        "id": "rishi-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.0981,
+        "lng": 78.2736,
+        "order": 3
+      },
+      {
+        "id": "rishi-cp4",
+        "name": "Trail junction",
+        "lat": 30.1037,
+        "lng": 78.2616,
+        "order": 4
+      },
+      {
+        "id": "rishi-cp5",
+        "name": "High camp approach",
+        "lat": 30.1093,
+        "lng": 78.2676,
+        "order": 5
+      },
+      {
+        "id": "rishi-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.1149,
+        "lng": 78.2736,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "ranikhet",
+    "checkpoints": [
+      {
+        "id": "ranik-cp1",
+        "name": "Base: Ranikhet",
+        "lat": 29.6435,
+        "lng": 79.4235,
+        "order": 1
+      },
+      {
+        "id": "ranik-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.6491,
+        "lng": 79.4295,
+        "order": 2
+      },
+      {
+        "id": "ranik-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.6547,
+        "lng": 79.4355,
+        "order": 3
+      },
+      {
+        "id": "ranik-cp4",
+        "name": "Trail junction",
+        "lat": 29.6603,
+        "lng": 79.4235,
+        "order": 4
+      },
+      {
+        "id": "ranik-cp5",
+        "name": "High camp approach",
+        "lat": 29.6659,
+        "lng": 79.4295,
+        "order": 5
+      },
+      {
+        "id": "ranik-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.6715,
+        "lng": 79.4355,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "kausani",
+    "checkpoints": [
+      {
+        "id": "kausa-cp1",
+        "name": "Base: Kausani",
+        "lat": 29.8412,
+        "lng": 79.595,
+        "order": 1
+      },
+      {
+        "id": "kausa-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.8468,
+        "lng": 79.601,
+        "order": 2
+      },
+      {
+        "id": "kausa-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.8524,
+        "lng": 79.607,
+        "order": 3
+      },
+      {
+        "id": "kausa-cp4",
+        "name": "Trail junction",
+        "lat": 29.858,
+        "lng": 79.595,
+        "order": 4
+      },
+      {
+        "id": "kausa-cp5",
+        "name": "High camp approach",
+        "lat": 29.8636,
+        "lng": 79.601,
+        "order": 5
+      },
+      {
+        "id": "kausa-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.8692,
+        "lng": 79.607,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "almora",
+    "checkpoints": [
+      {
+        "id": "almor-cp1",
+        "name": "Base: Almora",
+        "lat": 29.5892,
+        "lng": 79.6407,
+        "order": 1
+      },
+      {
+        "id": "almor-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.5948,
+        "lng": 79.6467,
+        "order": 2
+      },
+      {
+        "id": "almor-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.6004,
+        "lng": 79.6527,
+        "order": 3
+      },
+      {
+        "id": "almor-cp4",
+        "name": "Trail junction",
+        "lat": 29.606,
+        "lng": 79.6407,
+        "order": 4
+      },
+      {
+        "id": "almor-cp5",
+        "name": "High camp approach",
+        "lat": 29.6116,
+        "lng": 79.6467,
+        "order": 5
+      },
+      {
+        "id": "almor-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.6172,
+        "lng": 79.6527,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "lansdowne",
+    "checkpoints": [
+      {
+        "id": "lansd-cp1",
+        "name": "Base: Lansdowne",
+        "lat": 29.8377,
+        "lng": 78.6815,
+        "order": 1
+      },
+      {
+        "id": "lansd-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.8433,
+        "lng": 78.6875,
+        "order": 2
+      },
+      {
+        "id": "lansd-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.8489,
+        "lng": 78.6935,
+        "order": 3
+      },
+      {
+        "id": "lansd-cp4",
+        "name": "Trail junction",
+        "lat": 29.8545,
+        "lng": 78.6815,
+        "order": 4
+      },
+      {
+        "id": "lansd-cp5",
+        "name": "High camp approach",
+        "lat": 29.8601,
+        "lng": 78.6875,
+        "order": 5
+      },
+      {
+        "id": "lansd-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.8657,
+        "lng": 78.6935,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "chopta",
+    "checkpoints": [
+      {
+        "id": "chopt-cp1",
+        "name": "Base: Chopta",
+        "lat": 30.4953,
+        "lng": 79.2034,
+        "order": 1
+      },
+      {
+        "id": "chopt-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.5009,
+        "lng": 79.2094,
+        "order": 2
+      },
+      {
+        "id": "chopt-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.5065,
+        "lng": 79.2154,
+        "order": 3
+      },
+      {
+        "id": "chopt-cp4",
+        "name": "Trail junction",
+        "lat": 30.5121,
+        "lng": 79.2034,
+        "order": 4
+      },
+      {
+        "id": "chopt-cp5",
+        "name": "High camp approach",
+        "lat": 30.5177,
+        "lng": 79.2094,
+        "order": 5
+      },
+      {
+        "id": "chopt-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.5233,
+        "lng": 79.2154,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "dhanaulti",
+    "checkpoints": [
+      {
+        "id": "dhana-cp1",
+        "name": "Base: Dhanaulti",
+        "lat": 30.4272,
+        "lng": 78.2271,
+        "order": 1
+      },
+      {
+        "id": "dhana-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.4328,
+        "lng": 78.2331,
+        "order": 2
+      },
+      {
+        "id": "dhana-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.4384,
+        "lng": 78.2391,
+        "order": 3
+      },
+      {
+        "id": "dhana-cp4",
+        "name": "Trail junction",
+        "lat": 30.444,
+        "lng": 78.2271,
+        "order": 4
+      },
+      {
+        "id": "dhana-cp5",
+        "name": "High camp approach",
+        "lat": 30.4496,
+        "lng": 78.2331,
+        "order": 5
+      },
+      {
+        "id": "dhana-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.4552,
+        "lng": 78.2391,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "pithoragarh",
+    "checkpoints": [
+      {
+        "id": "pitho-cp1",
+        "name": "Base: Pithoragarh",
+        "lat": 29.58,
+        "lng": 80.209,
+        "order": 1
+      },
+      {
+        "id": "pitho-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.5856,
+        "lng": 80.215,
+        "order": 2
+      },
+      {
+        "id": "pitho-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.5912,
+        "lng": 80.221,
+        "order": 3
+      },
+      {
+        "id": "pitho-cp4",
+        "name": "Trail junction",
+        "lat": 29.5968,
+        "lng": 80.209,
+        "order": 4
+      },
+      {
+        "id": "pitho-cp5",
+        "name": "High camp approach",
+        "lat": 29.6024,
+        "lng": 80.215,
+        "order": 5
+      },
+      {
+        "id": "pitho-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.608,
+        "lng": 80.221,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "kanatal",
+    "checkpoints": [
+      {
+        "id": "kanat-cp1",
+        "name": "Base: Kanatal",
+        "lat": 30.4219,
+        "lng": 78.4407,
+        "order": 1
+      },
+      {
+        "id": "kanat-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.4275,
+        "lng": 78.4467,
+        "order": 2
+      },
+      {
+        "id": "kanat-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.4331,
+        "lng": 78.4527,
+        "order": 3
+      },
+      {
+        "id": "kanat-cp4",
+        "name": "Trail junction",
+        "lat": 30.4387,
+        "lng": 78.4407,
+        "order": 4
+      },
+      {
+        "id": "kanat-cp5",
+        "name": "High camp approach",
+        "lat": 30.4443,
+        "lng": 78.4467,
+        "order": 5
+      },
+      {
+        "id": "kanat-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.4499,
+        "lng": 78.4527,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "chakrata",
+    "checkpoints": [
+      {
+        "id": "chakr-cp1",
+        "name": "Base: Chakrata",
+        "lat": 30.6944,
+        "lng": 77.8634,
+        "order": 1
+      },
+      {
+        "id": "chakr-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.7,
+        "lng": 77.8694,
+        "order": 2
+      },
+      {
+        "id": "chakr-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.7056,
+        "lng": 77.8754,
+        "order": 3
+      },
+      {
+        "id": "chakr-cp4",
+        "name": "Trail junction",
+        "lat": 30.7112,
+        "lng": 77.8634,
+        "order": 4
+      },
+      {
+        "id": "chakr-cp5",
+        "name": "High camp approach",
+        "lat": 30.7168,
+        "lng": 77.8694,
+        "order": 5
+      },
+      {
+        "id": "chakr-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.7224,
+        "lng": 77.8754,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "munsiyari",
+    "checkpoints": [
+      {
+        "id": "munsi-cp1",
+        "name": "Base: Munsiyari",
+        "lat": 30.0657,
+        "lng": 80.234,
+        "order": 1
+      },
+      {
+        "id": "munsi-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.0713,
+        "lng": 80.24,
+        "order": 2
+      },
+      {
+        "id": "munsi-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.0769,
+        "lng": 80.246,
+        "order": 3
+      },
+      {
+        "id": "munsi-cp4",
+        "name": "Trail junction",
+        "lat": 30.0825,
+        "lng": 80.234,
+        "order": 4
+      },
+      {
+        "id": "munsi-cp5",
+        "name": "High camp approach",
+        "lat": 30.0881,
+        "lng": 80.24,
+        "order": 5
+      },
+      {
+        "id": "munsi-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.0937,
+        "lng": 80.246,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "harsil",
+    "checkpoints": [
+      {
+        "id": "harsi-cp1",
+        "name": "Base: Harsil",
+        "lat": 30.9736,
+        "lng": 78.7404,
+        "order": 1
+      },
+      {
+        "id": "harsi-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.9792,
+        "lng": 78.7464,
+        "order": 2
+      },
+      {
+        "id": "harsi-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.9848,
+        "lng": 78.7524,
+        "order": 3
+      },
+      {
+        "id": "harsi-cp4",
+        "name": "Trail junction",
+        "lat": 30.9904,
+        "lng": 78.7404,
+        "order": 4
+      },
+      {
+        "id": "harsi-cp5",
+        "name": "High camp approach",
+        "lat": 30.996,
+        "lng": 78.7464,
+        "order": 5
+      },
+      {
+        "id": "harsi-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 31.0016,
+        "lng": 78.7524,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "gangotri",
+    "checkpoints": [
+      {
+        "id": "gango-cp1",
+        "name": "Base: Gangotri",
+        "lat": 30.9947,
+        "lng": 78.9336,
+        "order": 1
+      },
+      {
+        "id": "gango-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 31.0003,
+        "lng": 78.9396,
+        "order": 2
+      },
+      {
+        "id": "gango-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 31.0059,
+        "lng": 78.9456,
+        "order": 3
+      },
+      {
+        "id": "gango-cp4",
+        "name": "Trail junction",
+        "lat": 31.0115,
+        "lng": 78.9336,
+        "order": 4
+      },
+      {
+        "id": "gango-cp5",
+        "name": "High camp approach",
+        "lat": 31.0171,
+        "lng": 78.9396,
+        "order": 5
+      },
+      {
+        "id": "gango-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 31.0227,
+        "lng": 78.9456,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "yamunotri",
+    "checkpoints": [
+      {
+        "id": "yamun-cp1",
+        "name": "Base: Yamunotri",
+        "lat": 30.9989,
+        "lng": 78.4565,
+        "order": 1
+      },
+      {
+        "id": "yamun-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 31.0045,
+        "lng": 78.4625,
+        "order": 2
+      },
+      {
+        "id": "yamun-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 31.0101,
+        "lng": 78.4685,
+        "order": 3
+      },
+      {
+        "id": "yamun-cp4",
+        "name": "Trail junction",
+        "lat": 31.0157,
+        "lng": 78.4565,
+        "order": 4
+      },
+      {
+        "id": "yamun-cp5",
+        "name": "High camp approach",
+        "lat": 31.0213,
+        "lng": 78.4625,
+        "order": 5
+      },
+      {
+        "id": "yamun-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 31.0269,
+        "lng": 78.4685,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "joshimath",
+    "checkpoints": [
+      {
+        "id": "joshi-cp1",
+        "name": "Base: Joshimath",
+        "lat": 30.5553,
+        "lng": 79.558,
+        "order": 1
+      },
+      {
+        "id": "joshi-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.5609,
+        "lng": 79.564,
+        "order": 2
+      },
+      {
+        "id": "joshi-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.5665,
+        "lng": 79.57,
+        "order": 3
+      },
+      {
+        "id": "joshi-cp4",
+        "name": "Trail junction",
+        "lat": 30.5721,
+        "lng": 79.558,
+        "order": 4
+      },
+      {
+        "id": "joshi-cp5",
+        "name": "High camp approach",
+        "lat": 30.5777,
+        "lng": 79.564,
+        "order": 5
+      },
+      {
+        "id": "joshi-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.5833,
+        "lng": 79.57,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "uttarkashi",
+    "checkpoints": [
+      {
+        "id": "uttar-cp1",
+        "name": "Base: Uttarkashi",
+        "lat": 30.7289,
+        "lng": 78.4373,
+        "order": 1
+      },
+      {
+        "id": "uttar-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 30.7345,
+        "lng": 78.4433,
+        "order": 2
+      },
+      {
+        "id": "uttar-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 30.7401,
+        "lng": 78.4493,
+        "order": 3
+      },
+      {
+        "id": "uttar-cp4",
+        "name": "Trail junction",
+        "lat": 30.7457,
+        "lng": 78.4373,
+        "order": 4
+      },
+      {
+        "id": "uttar-cp5",
+        "name": "High camp approach",
+        "lat": 30.7513,
+        "lng": 78.4433,
+        "order": 5
+      },
+      {
+        "id": "uttar-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 30.7569,
+        "lng": 78.4493,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "haridwar",
+    "checkpoints": [
+      {
+        "id": "harid-cp1",
+        "name": "Base: Haridwar",
+        "lat": 29.9457,
+        "lng": 78.1582,
+        "order": 1
+      },
+      {
+        "id": "harid-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.9513,
+        "lng": 78.1642,
+        "order": 2
+      },
+      {
+        "id": "harid-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.9569,
+        "lng": 78.1702,
+        "order": 3
+      },
+      {
+        "id": "harid-cp4",
+        "name": "Trail junction",
+        "lat": 29.9625,
+        "lng": 78.1582,
+        "order": 4
+      },
+      {
+        "id": "harid-cp5",
+        "name": "High camp approach",
+        "lat": 29.9681,
+        "lng": 78.1642,
+        "order": 5
+      },
+      {
+        "id": "harid-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.9737,
+        "lng": 78.1702,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "destination_id": "mukteshwar",
+    "checkpoints": [
+      {
+        "id": "mukte-cp1",
+        "name": "Base: Mukteshwar",
+        "lat": 29.4684,
+        "lng": 79.3499,
+        "order": 1
+      },
+      {
+        "id": "mukte-cp2",
+        "name": "Ridge viewpoint",
+        "lat": 29.474,
+        "lng": 79.3559,
+        "order": 2
+      },
+      {
+        "id": "mukte-cp3",
+        "name": "Forest / meadow stretch",
+        "lat": 29.4796,
+        "lng": 79.3619,
+        "order": 3
+      },
+      {
+        "id": "mukte-cp4",
+        "name": "Trail junction",
+        "lat": 29.4852,
+        "lng": 79.3499,
+        "order": 4
+      },
+      {
+        "id": "mukte-cp5",
+        "name": "High camp approach",
+        "lat": 29.4908,
+        "lng": 79.3559,
+        "order": 5
+      },
+      {
+        "id": "mukte-cp6",
+        "name": "Summit / shrine precinct",
+        "lat": 29.4964,
+        "lng": 79.3619,
+        "order": 6
+      }
+    ]
+  }
+]

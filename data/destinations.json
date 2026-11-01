@@ -1,0 +1,903 @@
+[
+  {
+    "id": "manali",
+    "name": "Manali",
+    "state": "Himachal Pradesh",
+    "slug": "manali",
+    "short_description": "Alpine valleys, river gorges, and gateway to high Himalayan passes.",
+    "description": "Manali sits in the Kullu Valley along the Beas River, surrounded by deodar forests and snow-capped peaks. It blends adventure sports, café culture, and access to Rohtang and Atal Tunnel routes toward Lahaul-Spiti.",
+    "budget_min": 8000,
+    "budget_max": 35000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "lat": 32.2396,
+    "lng": 77.1887,
+    "altitude_m": 2050,
+    "overview": "A classic hill station base for trekking, paragliding, and road trips toward higher valleys. Acclimatize before pushing to very high passes.",
+    "weather_summary": "Pleasant summers; cold winters with snow at higher trails. Monsoon brings landslide risk on mountain roads.",
+    "best_time": "March–June and September–November for clear skies; December–February for snow experiences.",
+    "trek_start": {
+      "name": "Old Manali Trek Point",
+      "lat": 32.2521,
+      "lng": 77.1789
+    },
+    "estimated_daily_cost": 3500,
+    "gear": [
+      "Layered clothing and windproof jacket",
+      "Trekking shoes with grip",
+      "Water bottle and energy snacks",
+      "Sunscreen, cap, and sunglasses",
+      "Basic first-aid kit"
+    ],
+    "things_to_carry": [
+      "Reusable water bottle",
+      "Power bank",
+      "Light rain shell",
+      "ID copies"
+    ]
+  },
+  {
+    "id": "leh-ladakh",
+    "name": "Leh-Ladakh",
+    "state": "Ladakh",
+    "slug": "leh-ladakh",
+    "short_description": "High-altitude desert, ancient monasteries, and dramatic mountain passes.",
+    "description": "Leh is the heart of Ladakh—arid peaks, Buddhist heritage, and routes to Nubra, Pangong, and remote villages. Altitude and thin air demand gradual acclimatization.",
+    "budget_min": 15000,
+    "budget_max": 60000,
+    "difficulty": "hard",
+    "type": "adventure",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
+    "lat": 34.1526,
+    "lng": 77.5771,
+    "altitude_m": 3524,
+    "overview": "Plan rest days in Leh, carry sun protection and layers, and respect inner-line permit rules for protected areas.",
+    "weather_summary": "Cold desert climate—intense sun, cool nights, and winter road closures on high passes.",
+    "best_time": "May–September when most passes are open; avoid rushed itineraries at altitude.",
+    "trek_start": {
+      "name": "Leh Main Bazaar Trailhead",
+      "lat": 34.1631,
+      "lng": 77.5845
+    },
+    "estimated_daily_cost": 4500,
+    "gear": [
+      "Altitude meds (consult doctor)",
+      "SPF 50+ and lip balm",
+      "Warm down jacket and thermals",
+      "Buff / scarf for dust and cold",
+      "Sunglasses with UV protection"
+    ],
+    "things_to_carry": [
+      "Reusable bottle (hydration critical)",
+      "Portable oxygen (if advised)",
+      "Cash for remote areas",
+      "Inner line permit copies"
+    ]
+  },
+  {
+    "id": "kedarnath",
+    "name": "Kedarnath",
+    "state": "Uttarakhand",
+    "slug": "kedarnath",
+    "short_description": "Sacred Shiva shrine set among towering Garhwal peaks.",
+    "description": "The trek to Kedarnath follows the Mandakini valley through steep stone paths to one of the holiest Char Dham sites. Weather can change rapidly at altitude.",
+    "budget_min": 6000,
+    "budget_max": 22000,
+    "difficulty": "hard",
+    "type": "pilgrimage",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "lat": 30.7353,
+    "lng": 79.0669,
+    "altitude_m": 3583,
+    "overview": "A demanding pilgrimage trek—register in advance, check helicopter and pony options if needed, and carry warm layers year-round.",
+    "weather_summary": "Cool to cold; afternoon clouds common during monsoon window. Winter closure of the shrine route.",
+    "best_time": "May–June and September–October (pre/post monsoon) for safer trekking windows.",
+    "trek_start": {
+      "name": "Gaurikund Trail Start",
+      "lat": 30.6489,
+      "lng": 79.0321
+    },
+    "estimated_daily_cost": 2800,
+    "gear": [
+      "Sturdy trekking pole",
+      "Warm gloves and wool cap",
+      "Rain cover for backpack",
+      "Headlamp with spare cells",
+      "High-energy dry food"
+    ],
+    "things_to_carry": [
+      "Registration printout",
+      "Woolen layers (even in summer)",
+      "Electrolyte sachets",
+      "Cash for pony/heli counters"
+    ]
+  },
+  {
+    "id": "badrinath",
+    "name": "Badrinath",
+    "state": "Uttarakhand",
+    "slug": "badrinath",
+    "short_description": "Pilgrimage town beneath Nilkantha peak along the Alaknanda.",
+    "description": "Badrinath hosts the iconic Vishnu temple at roughly 3,300 m. The journey combines road access with short walks; altitude and cold evenings matter even when the walk feels easier than Kedarnath.",
+    "budget_min": 7000,
+    "budget_max": 25000,
+    "difficulty": "moderate",
+    "type": "pilgrimage",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "lat": 30.7433,
+    "lng": 79.4938,
+    "altitude_m": 3300,
+    "overview": "Road-linked pilgrimage hub—still plan for registration, weather delays, and layered clothing for temple visits and short hikes.",
+    "weather_summary": "Cold nights year-round; monsoon can affect road connectivity on the route from Rishikesh.",
+    "best_time": "May–June and September–October for stable mountain weather.",
+    "trek_start": {
+      "name": "Mana Village Walk Start",
+      "lat": 30.7704,
+      "lng": 79.4925
+    },
+    "estimated_daily_cost": 3000,
+    "gear": [
+      "Warm inner layers",
+      "Comfortable walking shoes",
+      "Rain poncho",
+      "Small daypack",
+      "Temple-appropriate clothing"
+    ],
+    "things_to_carry": [
+      "Yatra registration",
+      "ID and photocopies",
+      "Thermos for warm drinks",
+      "Dry fruits for altitude energy"
+    ]
+  },
+  {
+    "id": "auli",
+    "name": "Auli",
+    "state": "Uttarakhand",
+    "slug": "auli",
+    "short_description": "Meadows and ski slopes with Nanda Devi views.",
+    "description": "Auli is a high meadow known for winter skiing and cable-car views across the Garhwal Himalaya. Gentle walks suit relaxation while nearby trails add adventure.",
+    "budget_min": 9000,
+    "budget_max": 32000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+    "lat": 30.5287,
+    "lng": 79.5629,
+    "altitude_m": 2800,
+    "overview": "Ideal for scenic chairlift rides, photography, and short alpine walks. Ski season needs advance gear or rentals.",
+    "weather_summary": "Crisp and sunny in peak season; heavy snow in deep winter affecting road access.",
+    "best_time": "December–March for snow sports; April–June for meadows and clearer trekking weather.",
+    "trek_start": {
+      "name": "GMVN Auli Ski Base",
+      "lat": 30.5291,
+      "lng": 79.5655
+    },
+    "estimated_daily_cost": 4000,
+    "gear": [
+      "Snow boots or crampons (winter)",
+      "Goggles and ski gloves (seasonal)",
+      "Insulated jacket",
+      "Trekking poles for snow walks",
+      "Balaclava"
+    ],
+    "things_to_carry": [
+      "Sunscreen (high UV at snow)",
+      "Lip balm",
+      "Camera with spare batteries",
+      "Snacks for chairlift queues"
+    ]
+  },
+  {
+    "id": "mussoorie",
+    "name": "Mussoorie",
+    "slug": "mussoorie",
+    "short_description": "Queen of the Hills—Mall Road, Doon views, colonial charm.",
+    "description": "Mussoorie overlooks the Doon Valley from the Garhwal foothills. Gun Hill, Kempty Falls, and Camel Back Road are classics; winter line views draw photographers.",
+    "budget_min": 7000,
+    "budget_max": 28000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "lat": 30.4598,
+    "lng": 78.0644,
+    "altitude_m": 2005,
+    "weather_summary": "Cool summers; cold winters. Monsoon fog and slippery trails on outlying walks.",
+    "best_time": "March–June and September–November; December–January for crisp mountain air.",
+    "trek_start": {
+      "name": "Gun Hill Ropeway Base",
+      "lat": 30.4553,
+      "lng": 78.0745
+    },
+    "estimated_daily_cost": 3200,
+    "gear": [
+      "Light woolens",
+      "Comfortable walking shoes",
+      "Umbrella or poncho",
+      "Sun hat",
+      "Daypack"
+    ],
+    "things_to_carry": [
+      "Water bottle",
+      "Cash for Mall snacks",
+      "Light jacket",
+      "Phone charger"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Queen of the Hills—Mall Road, Doon views, colonial charm."
+  },
+  {
+    "id": "nainital",
+    "name": "Nainital",
+    "slug": "nainital",
+    "short_description": "Lake district of Kumaon—Naini Lake, boats, and forested ridges.",
+    "description": "Nainital wraps around Naini Lake at roughly 2,000 m. Boating, Snow View, and Naina Devi Temple anchor visits; nearby Sattal and Bhimtal extend trips.",
+    "budget_min": 6500,
+    "budget_max": 26000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=80",
+    "lat": 29.3803,
+    "lng": 79.4636,
+    "altitude_m": 2084,
+    "weather_summary": "Mild summers; chilly winters with occasional snow on ridges. Monsoon lake mists.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Mallital Boat Club",
+      "lat": 29.3912,
+      "lng": 79.4548
+    },
+    "estimated_daily_cost": 3000,
+    "gear": [
+      "Layered clothing",
+      "Boat-friendly dry bag",
+      "Comfortable shoes",
+      "Sunscreen"
+    ],
+    "things_to_carry": [
+      "ID for boating",
+      "Light shawl",
+      "Umbrella",
+      "Snacks"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Lake district of Kumaon—Naini Lake, boats, and forested ridges."
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh",
+    "slug": "rishikesh",
+    "short_description": "Ganga ghats, yoga capital, and white-water gateway to Garhwal.",
+    "description": "Rishikesh sits where the Ganga leaves the Shivaliks. Ashrams, Laxman Jhula, and Class II–IV rapids make it a hub for wellness and adventure before higher hills.",
+    "budget_min": 4000,
+    "budget_max": 18000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
+    "lat": 30.0869,
+    "lng": 78.2676,
+    "altitude_m": 372,
+    "weather_summary": "Warm pre-monsoon; heavy monsoon rains. Pleasant October–March.",
+    "best_time": "Late September–May for rafting; avoid peak monsoon.",
+    "trek_start": {
+      "name": "Laxman Jhula Riverside",
+      "lat": 30.1262,
+      "lng": 78.3308
+    },
+    "estimated_daily_cost": 2200,
+    "gear": [
+      "Quick-dry clothes",
+      "River sandals",
+      "Dry bag",
+      "Sunscreen"
+    ],
+    "things_to_carry": [
+      "Mosquito repellent",
+      "Reusable bottle",
+      "Yoga mat if staying ashram"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Ganga ghats, yoga capital, and white-water gateway to Garhwal."
+  },
+  {
+    "id": "ranikhet",
+    "name": "Ranikhet",
+    "slug": "ranikhet",
+    "short_description": "Quiet cantonment meadows and Himalayan views in Almora district.",
+    "description": "Ranikhet offers golf, pine forests, and views of Nanda Devi range. It is calmer than crowded hill stations and suits slow travel.",
+    "budget_min": 5500,
+    "budget_max": 20000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "lat": 29.6435,
+    "lng": 79.4295,
+    "altitude_m": 1829,
+    "weather_summary": "Pleasant summers; cold winters. Clear skies in post-monsoon.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Chaubatia Orchards Trail",
+      "lat": 29.668,
+      "lng": 79.405
+    },
+    "estimated_daily_cost": 2600,
+    "gear": [
+      "Warm layer for evenings",
+      "Walking shoes",
+      "Binoculars for birds"
+    ],
+    "things_to_carry": [
+      "Thermos",
+      "Cap",
+      "Cash"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Quiet cantonment meadows and Himalayan views in Almora district."
+  },
+  {
+    "id": "kausani",
+    "name": "Kausani",
+    "slug": "kausani",
+    "short_description": "Panoramas of Trishul and Nanda Devi—tea gardens and quiet ridges.",
+    "description": "Kausani is often called the Switzerland of India for its 300 km Himalayan views. Tea estates and Anasakti Ashram add culture to the vistas.",
+    "budget_min": 5000,
+    "budget_max": 19000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "lat": 29.8412,
+    "lng": 79.601,
+    "altitude_m": 1890,
+    "weather_summary": "Cool year-round; winter snow possible. Monsoon clouds obscure peaks.",
+    "best_time": "October–April for clearest mountain views.",
+    "trek_start": {
+      "name": "Viewpoint Ridge Walk",
+      "lat": 29.845,
+      "lng": 79.595
+    },
+    "estimated_daily_cost": 2500,
+    "gear": [
+      "Warm jacket",
+      "Camera",
+      "Trekking poles optional"
+    ],
+    "things_to_carry": [
+      "Binoculars",
+      "Tea sampling cash",
+      "Wool cap"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Panoramas of Trishul and Nanda Devi—tea gardens and quiet ridges."
+  },
+  {
+    "id": "almora",
+    "name": "Almora",
+    "slug": "almora",
+    "short_description": "Kumaoni culture, cobbled bazaars, and temple architecture.",
+    "description": "Almora is a tiered ridge town with Kasar Devi, Bright End Corner, and access to Binsar and Jageshwar. Rich in handicrafts and local cuisine.",
+    "budget_min": 5000,
+    "budget_max": 18000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+    "lat": 29.5892,
+    "lng": 79.6467,
+    "altitude_m": 1640,
+    "weather_summary": "Temperate; monsoon heavy. Winters cool.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Kasar Devi Road Fork",
+      "lat": 29.601,
+      "lng": 79.638
+    },
+    "estimated_daily_cost": 2400,
+    "gear": [
+      "Comfortable shoes for slopes",
+      "Light rain gear"
+    ],
+    "things_to_carry": [
+      "Shopping bag for local wool",
+      "Water"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Kumaoni culture, cobbled bazaars, and temple architecture."
+  },
+  {
+    "id": "lansdowne",
+    "name": "Lansdowne",
+    "slug": "lansdowne",
+    "short_description": "Garhwal Rifles town—deodar forests and unhurried walks.",
+    "description": "Lansdowne is a cantonment hill station with Bhulla Lake, Tip-n-Top views, and minimal commercialization compared to bigger resorts.",
+    "budget_min": 5000,
+    "budget_max": 17000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "lat": 29.8377,
+    "lng": 78.6875,
+    "altitude_m": 1706,
+    "weather_summary": "Pleasant summers; cold winters with occasional snow.",
+    "best_time": "March–November.",
+    "trek_start": {
+      "name": "St. Mary Church Loop",
+      "lat": 29.834,
+      "lng": 78.69
+    },
+    "estimated_daily_cost": 2300,
+    "gear": [
+      "Walking shoes",
+      "Warm layer"
+    ],
+    "things_to_carry": [
+      "Snacks",
+      "Power bank"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Garhwal Rifles town—deodar forests and unhurried walks."
+  },
+  {
+    "id": "chopta",
+    "name": "Chopta",
+    "slug": "chopta",
+    "short_description": "Mini Switzerland—base for Tungnath and Chandrashila treks.",
+    "description": "Chopta sits near 2,700 m in Rudraprayag district. Rhododendron forests and the trek to the highest Shiva temple at Tungnath define the experience.",
+    "budget_min": 6000,
+    "budget_max": 22000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
+    "lat": 30.4953,
+    "lng": 79.2094,
+    "altitude_m": 2680,
+    "weather_summary": "Cold nights even in summer; heavy winter snow. Monsoon trails slippery.",
+    "best_time": "April–June and September–November; winter for snow trekkers with gear.",
+    "trek_start": {
+      "name": "Chopta Meadow Base",
+      "lat": 30.496,
+      "lng": 79.208
+    },
+    "estimated_daily_cost": 2800,
+    "gear": [
+      "Insulated jacket",
+      "Trekking shoes",
+      "Headlamp",
+      "Trek poles"
+    ],
+    "things_to_carry": [
+      "Energy bars",
+      "Gloves",
+      "Rain cover"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Mini Switzerland—base for Tungnath and Chandrashila treks."
+  },
+  {
+    "id": "dhanaulti",
+    "name": "Dhanaulti",
+    "slug": "dhanaulti",
+    "short_description": "Deodar eco-parks and snow glimpses without Mussoorie crowds.",
+    "description": "Dhanaulti is a quieter alternative above the Doon, known for Surkanda Devi trek access and eco-park walks among oak and deodar.",
+    "budget_min": 5500,
+    "budget_max": 19000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+    "lat": 30.4272,
+    "lng": 78.2331,
+    "altitude_m": 2286,
+    "weather_summary": "Cool; winter snow possible. Monsoon lush but misty.",
+    "best_time": "March–June and October–February for snow seekers.",
+    "trek_start": {
+      "name": "Eco Park Main Gate",
+      "lat": 30.425,
+      "lng": 78.235
+    },
+    "estimated_daily_cost": 2600,
+    "gear": [
+      "Warm layers",
+      "Good grip shoes"
+    ],
+    "things_to_carry": [
+      "Sunscreen",
+      "Water"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Deodar eco-parks and snow glimpses without Mussoorie crowds."
+  },
+  {
+    "id": "pithoragarh",
+    "name": "Pithoragarh",
+    "slug": "pithoragarh",
+    "short_description": "Little Kashmir—gateway to Johar, Milam, and Nepal border routes.",
+    "description": "Pithoragarh is the eastern Kumaon hub with deep valleys and views of Panchachuli. It suits trek planners heading toward remote border areas.",
+    "budget_min": 5500,
+    "budget_max": 21000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "lat": 29.58,
+    "lng": 80.215,
+    "altitude_m": 1814,
+    "weather_summary": "Monsoon heavy; winters cold. Pre-monsoon thunderstorms.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Chandak Hills Base",
+      "lat": 29.59,
+      "lng": 80.205
+    },
+    "estimated_daily_cost": 2700,
+    "gear": [
+      "Rain gear",
+      "Warm clothes",
+      "Sturdy boots for onward treks"
+    ],
+    "things_to_carry": [
+      "Permit copies if going restricted",
+      "Cash"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Little Kashmir—gateway to Johar, Milam, and Nepal border routes."
+  },
+  {
+    "id": "kanatal",
+    "name": "Kanatal",
+    "slug": "kanatal",
+    "short_description": "Secluded ridge campfires and Tehri views above Chamba road.",
+    "description": "Kanatal is a small hamlet known for camping, Surkanda approaches, and apple orchards—popular with Delhi weekenders seeking quiet.",
+    "budget_min": 6000,
+    "budget_max": 20000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "lat": 30.4219,
+    "lng": 78.4467,
+    "altitude_m": 2590,
+    "weather_summary": "Cool; winter snow. Monsoon road checks needed.",
+    "best_time": "March–June and September–December.",
+    "trek_start": {
+      "name": "Kanatal Camp Ridge",
+      "lat": 30.423,
+      "lng": 78.445
+    },
+    "estimated_daily_cost": 2800,
+    "gear": [
+      "Warm sleeping layer if camping",
+      "Jacket"
+    ],
+    "things_to_carry": [
+      "Torch",
+      "Insect repellent summer"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Secluded ridge campfires and Tehri views above Chamba road."
+  },
+  {
+    "id": "chakrata",
+    "name": "Chakrata",
+    "slug": "chakrata",
+    "short_description": "Dehradun district cantonment—Tiger Falls and deodar solitude.",
+    "description": "Chakrata offers waterfall hikes, Budher caves, and strict forest schedules. Foreign nationals may need permits—check current rules before travel.",
+    "budget_min": 5500,
+    "budget_max": 19000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "lat": 30.6944,
+    "lng": 77.8694,
+    "altitude_m": 2118,
+    "weather_summary": "Pleasant summers; cold winters. Monsoon landslide risk on approach roads.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Tiger Falls Trailhead",
+      "lat": 30.665,
+      "lng": 77.885
+    },
+    "estimated_daily_cost": 2600,
+    "gear": [
+      "Hiking boots",
+      "Rain shell",
+      "Permit documents if required"
+    ],
+    "things_to_carry": [
+      "Offline maps",
+      "Water"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Dehradun district cantonment—Tiger Falls and deodar solitude."
+  },
+  {
+    "id": "munsiyari",
+    "name": "Munsiyari",
+    "slug": "munsiyari",
+    "short_description": "Panchachuli base—high trails and Johar valley culture.",
+    "description": "Munsiyari sits at the Gori Ganga valley head with dramatic Panchachuli views. It is the start for Milam, Ralam, and Khalia Top treks.",
+    "budget_min": 7000,
+    "budget_max": 25000,
+    "difficulty": "hard",
+    "type": "adventure",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
+    "lat": 30.0657,
+    "lng": 80.24,
+    "altitude_m": 2200,
+    "weather_summary": "Cold winters with snow; monsoon road disruptions.",
+    "best_time": "March–June and September–October.",
+    "trek_start": {
+      "name": "Khalia Top Trail Start",
+      "lat": 30.07,
+      "lng": 80.235
+    },
+    "estimated_daily_cost": 3000,
+    "gear": [
+      "Heavy warm layers",
+      "Trekking boots",
+      "Sunglasses for snow glare"
+    ],
+    "things_to_carry": [
+      "Cash (limited ATMs)",
+      "Snacks",
+      "First aid"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Panchachuli base—high trails and Johar valley culture."
+  },
+  {
+    "id": "harsil",
+    "name": "Harsil",
+    "slug": "harsil",
+    "short_description": "Bhagirathi hamlet—apple orchards on the road to Gangotri.",
+    "description": "Harsil is a scenic village before Gangotri with alpine walks and the Dharali–Gangotri corridor. Ideal for acclimatization and photography.",
+    "budget_min": 6000,
+    "budget_max": 22000,
+    "difficulty": "moderate",
+    "type": "relaxation",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "lat": 30.9736,
+    "lng": 78.7464,
+    "altitude_m": 2620,
+    "weather_summary": "Cold; winter road closures toward Gangotri. Monsoon cautious driving.",
+    "best_time": "April–June and September–November.",
+    "trek_start": {
+      "name": "Harsil Riverside Walk",
+      "lat": 30.975,
+      "lng": 78.745
+    },
+    "estimated_daily_cost": 2800,
+    "gear": [
+      "Warm layers",
+      "Sunscreen at altitude"
+    ],
+    "things_to_carry": [
+      "Cash",
+      "Wool cap"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Bhagirathi hamlet—apple orchards on the road to Gangotri."
+  },
+  {
+    "id": "gangotri",
+    "name": "Gangotri",
+    "slug": "gangotri",
+    "short_description": "Ganga origin shrine—gateway to Gaumukh trek.",
+    "description": "Gangotri temple marks the spiritual source of the Bhagirathi. Trekkers continue toward Gaumukh and Tapovan with permits and guides.",
+    "budget_min": 7000,
+    "budget_max": 24000,
+    "difficulty": "hard",
+    "type": "pilgrimage",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "lat": 30.9947,
+    "lng": 78.9396,
+    "altitude_m": 3100,
+    "weather_summary": "Cold; heavy winter snow. Short summer window for full access.",
+    "best_time": "May–June and September–October.",
+    "trek_start": {
+      "name": "Gangotri Temple Steps",
+      "lat": 30.9953,
+      "lng": 78.939
+    },
+    "estimated_daily_cost": 3000,
+    "gear": [
+      "Down jacket",
+      "Trek boots",
+      "Sun protection"
+    ],
+    "things_to_carry": [
+      "Registration if required",
+      "Dry food",
+      "Water bottle"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Ganga origin shrine—gateway to Gaumukh trek."
+  },
+  {
+    "id": "yamunotri",
+    "name": "Yamunotri",
+    "slug": "yamunotri",
+    "short_description": "Yamuna glacier shrine—Char Dham trek from Janki Chatti.",
+    "description": "Yamunotri is the western Char Dham site. The trek from Janki Chatti crosses rugged terrain to the hot-spring precinct at the temple.",
+    "budget_min": 6500,
+    "budget_max": 22000,
+    "difficulty": "moderate",
+    "type": "pilgrimage",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+    "lat": 30.9989,
+    "lng": 78.4625,
+    "altitude_m": 3291,
+    "weather_summary": "Cold; monsoon landslides on approach roads.",
+    "best_time": "May–June and September–October.",
+    "trek_start": {
+      "name": "Janki Chatti Trailhead",
+      "lat": 30.887,
+      "lng": 78.496
+    },
+    "estimated_daily_cost": 2900,
+    "gear": [
+      "Trekking pole",
+      "Rain cover",
+      "Warm layers"
+    ],
+    "things_to_carry": [
+      "Yatra registration",
+      "Electrolytes"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Yamuna glacier shrine—Char Dham trek from Janki Chatti."
+  },
+  {
+    "id": "joshimath",
+    "name": "Joshimath",
+    "slug": "joshimath",
+    "short_description": "Winter seat of Badrinath—cable car hub to Auli and valley access.",
+    "description": "Joshimath is a strategic Garhwal town for pilgrims and skiers. It links to Auli ropeway, Valley of Flowers (seasonal), and Hemkund routes.",
+    "budget_min": 6000,
+    "budget_max": 21000,
+    "difficulty": "moderate",
+    "type": "pilgrimage",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "lat": 30.5553,
+    "lng": 79.564,
+    "altitude_m": 1875,
+    "weather_summary": "Cold winters; monsoon travel delays common on mountain roads.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Auli Ropeway Lower",
+      "lat": 30.555,
+      "lng": 79.563
+    },
+    "estimated_daily_cost": 2700,
+    "gear": [
+      "Layers",
+      "Comfortable shoes"
+    ],
+    "things_to_carry": [
+      "Cash",
+      "Permit info for onward treks"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Winter seat of Badrinath—cable car hub to Auli and valley access."
+  },
+  {
+    "id": "uttarkashi",
+    "name": "Uttarkashi",
+    "slug": "uttarkashi",
+    "short_description": "Gateway town on the route to Gangotri and Dodital treks.",
+    "description": "Uttarkashi on the Bhagirathi offers temples, trekking outfitters, and logistics before higher Garhwal valleys.",
+    "budget_min": 5000,
+    "budget_max": 18000,
+    "difficulty": "moderate",
+    "type": "adventure",
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
+    "lat": 30.7289,
+    "lng": 78.4433,
+    "altitude_m": 1158,
+    "weather_summary": "Warm summers relative to high hills; monsoon river rise.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Maneri Dam Viewpoint",
+      "lat": 30.74,
+      "lng": 78.45
+    },
+    "estimated_daily_cost": 2200,
+    "gear": [
+      "Daypack",
+      "Rain shell"
+    ],
+    "things_to_carry": [
+      "Trek booking contacts",
+      "Water"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Gateway town on the route to Gangotri and Dodital treks."
+  },
+  {
+    "id": "haridwar",
+    "name": "Haridwar",
+    "slug": "haridwar",
+    "short_description": "Ganga aarti at Har Ki Pauri—pilgrim gateway to the Char Dham.",
+    "description": "Haridwar is one of Hinduism’s seven holy cities. Evening aarti, ghats, and access to Rishikesh and the mountain yatra routes define visits.",
+    "budget_min": 3000,
+    "budget_max": 12000,
+    "difficulty": "easy",
+    "type": "pilgrimage",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
+    "lat": 29.9457,
+    "lng": 78.1642,
+    "altitude_m": 314,
+    "weather_summary": "Hot summers; pleasant winters. Monsoon humid.",
+    "best_time": "October–March for comfort; festivals year-round.",
+    "trek_start": {
+      "name": "Har Ki Pauri",
+      "lat": 29.947,
+      "lng": 78.162
+    },
+    "estimated_daily_cost": 1500,
+    "gear": [
+      "Modest temple clothing",
+      "Water bottle"
+    ],
+    "things_to_carry": [
+      "Offering supplies",
+      "Secure pouch for valuables"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Ganga aarti at Har Ki Pauri—pilgrim gateway to the Char Dham."
+  },
+  {
+    "id": "mukteshwar",
+    "name": "Mukteshwar",
+    "slug": "mukteshwar",
+    "short_description": "Fruit belt views—Nanda Devi and peaceful Kumaon orchards.",
+    "description": "Mukteshwar offers cliff viewpoints, IVRI campus walks, and a quiet alternative to crowded Nainital.",
+    "budget_min": 5500,
+    "budget_max": 19000,
+    "difficulty": "easy",
+    "type": "relaxation",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=80",
+    "lat": 29.4684,
+    "lng": 79.3559,
+    "altitude_m": 2285,
+    "weather_summary": "Cool; winter frost. Monsoon lush.",
+    "best_time": "March–June and September–November.",
+    "trek_start": {
+      "name": "Chauli Ki Jali",
+      "lat": 29.472,
+      "lng": 79.352
+    },
+    "estimated_daily_cost": 2600,
+    "gear": [
+      "Jacket",
+      "Walking shoes"
+    ],
+    "things_to_carry": [
+      "Camera",
+      "Snacks"
+    ],
+    "state": "Uttarakhand",
+    "overview": "Fruit belt views—Nanda Devi and peaceful Kumaon orchards."
+  }
+]

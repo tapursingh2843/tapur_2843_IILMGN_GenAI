@@ -1,0 +1,36 @@
+{
+  "badrinath": {
+    "slug": "badrinath",
+    "title": "Char Dham registration required",
+    "banner_message": "Pre-registration or permit required for this destination",
+    "details": "Pilgrims traveling to Badrinath during the yatra season must complete biometric registration and carry valid ID. Check current government advisories for road status and health requirements.",
+    "official_registration_url": "https://registrationandtouristcare.uk.gov.in/",
+    "documents": [
+      "Government-issued photo ID (Aadhaar / passport)",
+      "Char Dham Yatra registration confirmation",
+      "Medical fitness certificate (if mandated for the season)",
+      "Emergency contact and travel insurance details"
+    ],
+    "weather_warnings": [
+      "Sudden temperature drops above 3000 m—carry thermal layers.",
+      "Check Alaknanda valley road status before departure."
+    ]
+  },
+  "kedarnath": {
+    "slug": "kedarnath",
+    "title": "Kedarnath trek registration",
+    "banner_message": "Pre-registration or permit required for this destination",
+    "details": "The trek to Kedarnath requires advance registration through the official portal. Helicopter and pony services may have separate booking rules. Respect carrying limits and waste policies on the trail.",
+    "official_registration_url": "https://registrationandtouristcare.uk.gov.in/",
+    "documents": [
+      "Photo ID and mobile-linked registration",
+      "Trek date slot confirmation",
+      "Travel and accommodation proof for base villages",
+      "Medical certificate when notified by authorities"
+    ],
+    "weather_warnings": [
+      "Afternoon cloud build-up—start early on trekking days.",
+      "Carry rain cover and traction aids on steep stone sections."
+    ]
+  }
+}
