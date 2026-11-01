@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Restaurants & Cafes in Uttarakhand · DevBhoomi Escapes{% endblock %}
+
+{% block head_extra %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/restaurants.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="rest-hero">
+  <div class="container">
+    <h1 class="animate-fade-up">Mountain Dining</h1>
+    <p class="lead animate-fade-up delay-1" style="margin: 0 auto;">Discover local dhabas, scenic cafes, and fine dining across the Himalayas.</p>
+  </div>
+</section>
+
+<section class="container rest-layout">
+  <aside class="filter-sidebar">
+    <div class="filter-group">
+      <div class="filter-title">Search</div>
+      <input type="text" class="input" id="rest-search" placeholder="Search by name or location...">
+    </div>
+    
+    <div class="filter-group">
+      <div class="filter-title">Max Average Price: <span id="price-display" style="color:var(--accent);">₹1,500</span></div>
+      <input type="range" id="price-filter" class="input-range" min="200" max="3000" step="100" value="1500">
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Cuisine</div>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="North Indian"> North Indian
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="Garhwali"> Garhwali
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="Kumaoni"> Kumaoni
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="Cafe"> Cafe
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="Continental"> Continental
+      </label>
+      <label style="display:block; font-size:0.9rem;">
+        <input type="checkbox" class="cuisine-filter" value="Chinese"> Chinese
+      </label>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Min Rating: <span id="rating-display" style="color:var(--accent);">3.0</span>★</div>
+      <input type="range" id="rating-filter" class="input-range" min="3.0" max="5.0" step="0.1" value="3.0">
+    </div>
+  </aside>
+
+  <div class="rest-results">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+      <p id="results-count" class="muted" style="margin: 0; font-weight: 500;">Loading restaurants...</p>
+      <select id="rest-sort" class="input" style="width: auto; padding: 0.4rem 0.8rem;">
+        <option value="recommended">Recommended</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+    
+    <div id="rest-grid">
+      <!-- Cards injected by JS -->
+      <div class="mrn-loading" style="display:flex; flex-direction:column; align-items:center; padding: 3rem 0; color: var(--muted);">
+        <div class="mrn-spinner" style="margin-bottom:1rem; width:30px; height:30px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 1s linear infinite;"></div>
+        Fetching restaurants...
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Template for rest card -->
+<template id="rest-card-template">
+  <div class="rest-card">
+    <div class="rest-card__media">
+      <img src="" alt="" loading="lazy">
+      <div class="rest-card__badge">Cuisine</div>
+    </div>
+    <div class="rest-card__body">
+      <div class="rest-card__header">
+        <div>
+          <h3 class="rest-card__title">Name</h3>
+          <div class="rest-card__location">📍 <span class="loc-text">Location</span></div>
+        </div>
+        <div class="rest-card__price">₹0 avg</div>
+      </div>
+      <div class="rating" style="margin-bottom: 0.5rem;">★ 4.5</div>
+      <div class="rest-card__tags">
+        <!-- Tags injected here -->
+      </div>
+      <div class="rest-card__footer">
+        <div>
+          <div class="rest-card__hours">🕒 <span class="hours-text">Hours</span></div>
+          <div class="muted small contact-text">📞 +91 0000000000</div>
+        </div>
+        <div class="rest-card__actions">
+          <button type="button" class="btn btn--ghost btn--small map-btn">Map View</button>
+          <button type="button" class="btn btn--primary btn--small reserve-btn">Reserve</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/restaurants.js') }}" defer></script>
+{% endblock %}

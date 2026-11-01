@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}DevBhoomi Escapes{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+  <div class="site-wallpaper" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="{{ url_for('home') }}">
+        <span class="logo__mark" aria-hidden="true">▲</span>
+        <span class="logo__text">DevBhoomi <span class="logo__accent">Escapes</span></span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+          <li><a href="{{ url_for('explore') }}" class="nav-link">Explore</a></li>
+          <li><a href="{{ url_for('planner') }}" class="nav-link">Trip Planner</a></li>
+          <li><a href="{{ url_for('live_map') }}" class="nav-link">Live Map</a></li>
+          <li><a href="{{ url_for('hotels') }}" class="nav-link">Hotels</a></li>
+          <li><a href="{{ url_for('restaurants') }}" class="nav-link">Restaurants</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="notif-wrap">
+          <button type="button" class="icon-btn" id="notif-btn" aria-expanded="false" aria-controls="notif-panel" title="Alerts" aria-label="Open notifications">
+            <span class="notif-bell" aria-hidden="true">🔔</span>
+            <span class="notif-badge" id="notif-badge" hidden>0</span>
+          </button>
+          <div class="notif-panel" id="notif-panel" hidden>
+            <div class="notif-panel__head">
+              <span>Mountain alerts</span>
+              <button type="button" class="text-btn" id="notif-clear">Clear read</button>
+            </div>
+            <ul class="notif-list" id="notif-list"></ul>
+            <p class="notif-panel__hint">Browser notifications can remind you before permit deadlines.</p>
+            <button type="button" class="btn btn--ghost btn--small" id="enable-push-btn">Enable reminders</button>
+          </div>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle dark mode">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="profile-wrap" id="profile-wrap">
+          <button type="button" class="profile-btn" id="profile-btn" aria-expanded="false" aria-controls="profile-menu">
+            <div class="profile-avatar">V</div>
+            <span class="profile-name">User</span>
+          </button>
+          <div class="profile-dropdown" id="profile-menu" hidden>
+            <div class="profile-dropdown__head">
+              <span class="profile-dropdown__name">User</span>
+              <span class="profile-dropdown__email">user@devbhoomi.com</span>
+            </div>
+            <ul class="profile-dropdown__list">
+              <li><a href="{{ url_for('profile') }}">My Trips</a></li>
+              <li><a href="{{ url_for('hotels') }}">Saved Hotels</a></li>
+              <li><a href="{{ url_for('restaurants') }}">Saved Restaurants</a></li>
+              <li><a href="javascript:void(0)">Notifications</a></li>
+              <li><a href="javascript:void(0)">Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="javascript:void(0)">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <p class="site-footer__brand">DevBhoomi Escapes</p>
+        <p class="muted">Mountain-only travel planning—hill stations, treks, and high pilgrimages.</p>
+      </div>
+      <div>
+        <p class="site-footer__heading">Explore</p>
+        <ul class="footer-links">
+          <li><a href="{{ url_for('explore') }}">All destinations</a></li>
+          <li><a href="{{ url_for('planner') }}">Build an itinerary</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="site-footer__heading">Safety</p>
+        <p class="muted small">Check official registrations for Char Dham routes. Weather changes fast above 3000 m.</p>
+      </div>
+    </div>
+    <div class="site-footer__bar">
+      <div class="container site-footer__bar-inner">
+        <span>© 2026 DevBhoomi Escapes</span>
+        <span class="muted small">Maps require <code>GOOGLE_MAPS_API_KEY</code></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.MTP_CONFIG = {
+      mapsApiKey: {{ maps_api_key|tojson }}
+    };
+  </script>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

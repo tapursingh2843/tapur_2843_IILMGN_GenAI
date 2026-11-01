@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Explore · DevBhoomi Escapes{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="page-hero__inner">
+    <h1 class="animate-fade-up">Explore peaks</h1>
+    <p class="lead animate-fade-up delay-1">Filter by budget, trek difficulty, and trip type—only mountain destinations.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="filters" id="explore-filters">
+      <label class="field field--inline">
+        <span class="field__label">Max budget (₹)</span>
+        <input type="range" class="input-range" id="filter-budget" min="5000" max="70000" step="1000" value="70000">
+        <output id="filter-budget-out" for="filter-budget">₹70,000</output>
+      </label>
+      <fieldset class="filter-chips">
+        <legend class="sr-only">Difficulty</legend>
+        <span class="field__label">Difficulty</span>
+        <label class="chip"><input type="checkbox" name="difficulty" value="easy"> Easy</label>
+        <label class="chip"><input type="checkbox" name="difficulty" value="moderate"> Moderate</label>
+        <label class="chip"><input type="checkbox" name="difficulty" value="hard"> Hard</label>
+      </fieldset>
+      <fieldset class="filter-chips">
+        <legend class="sr-only">Type</legend>
+        <span class="field__label">Type</span>
+        <label class="chip"><input type="checkbox" name="type" value="adventure"> Adventure</label>
+        <label class="chip"><input type="checkbox" name="type" value="pilgrimage"> Pilgrimage</label>
+        <label class="chip"><input type="checkbox" name="type" value="relaxation"> Relaxation</label>
+      </fieldset>
+      <button type="button" class="btn btn--ghost" id="filter-reset">Reset filters</button>
+    </div>
+
+    <p class="filter-result muted" id="filter-count" aria-live="polite"></p>
+
+    <div class="card-grid" id="explore-grid">
+      {% for d in destinations %}
+      <article
+        class="dest-card hover-lift explore-card"
+        data-budget-max="{{ d.budget_max }}"
+        data-budget-min="{{ d.budget_min }}"
+        data-difficulty="{{ d.difficulty }}"
+        data-type="{{ d.type }}"
+      >
+        <a class="dest-card__media" href="{{ url_for('destination_detail', slug=d.slug) }}">
+          <img src="{{ d.image }}" alt="" loading="lazy" width="600" height="360">
+          <span class="difficulty-pill difficulty-pill--{{ d.difficulty }}">{{ d.difficulty }}</span>
+        </a>
+        <div class="dest-card__body">
+          <h2><a href="{{ url_for('destination_detail', slug=d.slug) }}">{{ d.name }}</a></h2>
+          <p class="muted small">{{ d.state }} · <span class="type-tag">{{ d.type|capitalize }}</span></p>
+          <p>{{ d.short_description }}</p>
+          <div class="dest-card__meta">
+            <span class="rating" aria-label="Rating {{ d.rating }}">★ {{ d.rating }}</span>
+            <span class="muted small">Est. ₹{{ d.budget_min|inr }} – ₹{{ d.budget_max|inr }}</span>
+          </div>
+          <a class="text-link" href="{{ url_for('destination_detail', slug=d.slug) }}">View mountain brief →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

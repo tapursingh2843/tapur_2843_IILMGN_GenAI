@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBhoomi Escapes · Premium Adventure</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body class="login-page">
+
+  <!-- Cinematic Background Elements -->
+  <div class="login-bg-layer"></div>
+  <div class="login-overlay"></div>
+  <div class="login-vignette"></div>
+  <div class="snow-container" id="snow-container"></div>
+  <div class="fog-layer"></div>
+
+  <!-- Main Layout -->
+  <div class="login-container">
+    
+    <!-- Left Side: Branding & Features -->
+    <aside class="login-branding">
+      <div class="login-logo">
+        <span style="color: var(--accent);">▲</span> DevBhoomi Escapes
+      </div>
+      <h1 class="login-tagline">Discover the Soul of the Himalayas.</h1>
+      <p class="login-desc">Plan mountain adventures, explore hidden valleys, track live routes, discover premium hotels, and experience Uttarakhand like never before.</p>
+      
+      <div class="login-features">
+        <div class="feature-chip">
+          <i>⛰️</i> <span>100+ Destinations</span>
+        </div>
+        <div class="feature-chip">
+          <i>🗺️</i> <span>Live Route Navigation</span>
+        </div>
+        <div class="feature-chip">
+          <i>🌦️</i> <span>Live Weather Tracking</span>
+        </div>
+        <div class="feature-chip">
+          <i>✨</i> <span>Smart Travel Planner</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Side: Glassmorphism Card -->
+    <main class="login-auth">
+      <div class="glass-card" id="auth-card">
+        
+        <!-- Email/Initial View -->
+        <div id="view-login">
+          <div class="card-header">
+            <h2 class="card-title">Welcome Back</h2>
+            <p class="card-subtitle">Sign in to sync your adventures.</p>
+          </div>
+
+          <button type="button" class="btn-google login-trigger">
+            <svg width="20" height="20" viewBox="0 0 48 48">
+              <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+              <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+              <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+              <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+            </svg>
+            Continue with Google
+          </button>
+
+          <div class="divider"><span>OR</span></div>
+
+          <form class="auth-form" id="email-form">
+            <div class="input-group">
+              <input type="email" class="floating-input" id="email-input" placeholder=" " required>
+              <label for="email-input" class="floating-label">Email Address</label>
+            </div>
+            <div class="input-group">
+              <input type="password" class="floating-input" id="pwd-input" placeholder=" " required>
+              <label for="pwd-input" class="floating-label">Password</label>
+            </div>
+            <button type="submit" class="btn-primary">Sign In</button>
+          </form>
+
+          <div style="text-align: center; margin-top: 1rem;">
+            <a href="#" id="btn-phone-toggle" style="color: var(--muted); font-size: 0.9rem;">Sign in with Phone Number instead</a>
+          </div>
+
+          <a href="{{ url_for('home') }}" class="guest-link">Explore as Guest →</a>
+        </div>
+
+        <!-- Phone/OTP View -->
+        <div id="view-phone" style="display: none;">
+          <div class="card-header">
+            <h2 class="card-title">Phone Login</h2>
+            <p class="card-subtitle">Enter your number to receive an OTP.</p>
+          </div>
+
+          <form class="auth-form" id="phone-form">
+            <div class="input-group" style="display: flex; gap: 0.5rem;">
+              <div class="floating-input" style="width: auto; padding: 1.2rem 1rem 0.6rem; color: #94a3b8;">+91</div>
+              <div class="input-group" style="flex: 1;">
+                <input type="tel" class="floating-input" id="phone-input" placeholder=" " required>
+                <label for="phone-input" class="floating-label">Mobile Number</label>
+              </div>
+            </div>
+            
+            <button type="button" class="btn-primary" id="btn-send-otp">Send OTP</button>
+            
+            <div id="otp-group" style="display: none; margin-top: 0.5rem;">
+              <p style="text-align: center; color: #94a3b8; font-size: 0.9rem; margin-bottom: 0.5rem;">Enter 4-digit code</p>
+              <div class="otp-grid">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+              </div>
+              <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1.25rem;">Verify & Proceed</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 1rem;">
+              <a href="#" id="btn-back-to-login" style="color: var(--muted); font-size: 0.9rem;">Back to Email Login</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Success View -->
+        <div id="view-success" style="display: none; text-align: center; padding: 2rem 0;">
+          <div style="width: 72px; height: 72px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-radius: 50%; margin: 0 auto 1.5rem; display: grid; place-items: center; color: #0f172a; font-size: 2rem; box-shadow: 0 0 30px rgba(45, 212, 191, 0.4);">✓</div>
+          <h2 class="card-title">Authentication Successful</h2>
+          <p class="card-subtitle">Preparing your premium experience...</p>
+          <div class="mrn-spinner" style="margin: 2rem auto 0; width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.1); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>

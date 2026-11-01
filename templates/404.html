@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Not found · DevBhoomi Escapes{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="page-hero__inner">
+    <h1 class="animate-fade-up">Peak not found</h1>
+    <p class="lead animate-fade-up delay-1">This trail doesn’t exist. Head back to base camp.</p>
+    <a class="btn btn--primary animate-fade-up delay-2" href="{{ url_for('home') }}">Return home</a>
+  </div>
+</section>
+{% endblock %}

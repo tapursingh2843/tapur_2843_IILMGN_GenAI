@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Profile · DevBhoomi Escapes{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="page-hero__inner">
+    <h1 class="animate-fade-up">Your summit log</h1>
+    <p class="lead animate-fade-up delay-1">Demo profile with wishlist and checkpoint history stored locally.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container profile-grid">
+    <div class="profile-card card-panel">
+      <div class="profile-card__avatar" aria-hidden="true">VM</div>
+      <h2>Vidhu Mountaineer</h2>
+      <p class="muted small">Weekend alpinist · Based in the plains, dreams at 4000 m</p>
+      <dl class="fact-list">
+        <div><dt>Home base</dt><dd>Delhi NCR</dd></div>
+        <div><dt>Preferred terrain</dt><dd>Garhwal &amp; Lahaul</dd></div>
+        <div><dt>Emergency contact</dt><dd>+91 •••• ••••••</dd></div>
+      </dl>
+    </div>
+
+    <div class="card-panel">
+      <div class="panel-head">
+        <h2>Wishlist</h2>
+        <button type="button" class="text-btn" id="clear-wishlist">Clear</button>
+      </div>
+      <p class="muted small">Add peaks from destination pages using the heart control (below the title on detail pages—also synced here).</p>
+      <ul class="link-list" id="wishlist-mount"></ul>
+      <p class="muted small" id="wishlist-empty">No saved peaks yet—star a destination while browsing.</p>
+    </div>
+
+    <div class="card-panel profile-span-2">
+      <h2>Completed checkpoints</h2>
+      <p class="muted small">Pulled from your browser after you tick stages on destination pages.</p>
+      <div id="checkpoint-history" class="history-grid"></div>
+    </div>
+
+    <div class="card-panel profile-span-2">
+      <h2>Saved trip drafts</h2>
+      <p class="muted small">Last generated itineraries from the planner (demo persistence).</p>
+      <ul class="timeline compact" id="saved-trips"></ul>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="profile-destinations">{{ destinations|tojson }}</script>
+{% endblock %}

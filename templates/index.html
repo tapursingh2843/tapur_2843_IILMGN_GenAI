@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}Home · DevBhoomi Escapes{% endblock %}
+{% block content %}
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__veil"></div>
+  <div class="container hero__content">
+    <p class="eyebrow animate-fade-up">Himalayan hill stations &amp; sacred peaks</p>
+    <h1 class="hero__title animate-fade-up delay-1">Plan your next <span class="text-gradient">mountain ascent</span></h1>
+    <p class="hero__subtitle animate-fade-up delay-2">
+      Search treks, compare budgets, map checkpoints, and catch permit deadlines before you pack.
+    </p>
+
+    <form class="search-card animate-fade-up delay-3" id="home-search" action="{{ url_for('planner') }}" method="get">
+      <div class="search-card__grid">
+        <label class="field">
+          <span class="field__label">Destination</span>
+          <div
+            class="dest-combobox"
+            data-dest-json="home-destinations-data"
+            role="group"
+            aria-label="Search destinations"
+          >
+            <input type="hidden" name="destination" class="dest-combobox__value" required value="">
+            <input
+              type="text"
+              class="input dest-combobox__search"
+              placeholder="Search by place or state…"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-autocomplete="list"
+              aria-expanded="false"
+            >
+            <ul class="dest-combobox__list" role="listbox" hidden></ul>
+          </div>
+        </label>
+        <label class="field">
+          <span class="field__label">Budget (₹)</span>
+          <input class="input" type="number" name="budget" min="5000" step="500" placeholder="e.g. 25000" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Days</span>
+          <input class="input" type="number" name="days" min="1" max="21" value="5" required>
+        </label>
+        <button type="submit" class="btn btn--primary btn--block">Start planning</button>
+      </div>
+    </form>
+  </div>
+  <a href="#popular" class="scroll-cue" aria-label="Scroll to popular destinations">
+    <span></span>
+  </a>
+</section>
+
+<section class="section" id="popular">
+  <div class="container">
+    <header class="section__head">
+      <h2>Popular mountain destinations</h2>
+      <p class="muted">Curated high-country bases—from café-lined valleys to thin-air passes.</p>
+    </header>
+    <div class="card-grid">
+      {% for d in destinations %}
+      <article class="dest-card hover-lift">
+        <a class="dest-card__media" href="{{ url_for('destination_detail', slug=d.slug) }}">
+          <img src="{{ d.image }}" alt="" loading="lazy" width="600" height="360">
+          <span class="difficulty-pill difficulty-pill--{{ d.difficulty }}">{{ d.difficulty }}</span>
+        </a>
+        <div class="dest-card__body">
+          <h3><a href="{{ url_for('destination_detail', slug=d.slug) }}">{{ d.name }}</a></h3>
+          <p class="muted small">{{ d.state }} · {{ d.type|capitalize }}</p>
+          <p>{{ d.short_description }}</p>
+          <div class="dest-card__meta">
+            <span class="rating" aria-label="Rating {{ d.rating }}">★ {{ d.rating }}</span>
+            <span class="muted small">₹{{ d.budget_min|inr }} – ₹{{ d.budget_max|inr }}</span>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container split">
+    <div>
+      <h2>Built for altitude logistics</h2>
+      <p class="muted">Live maps, checkpoint progress, and permit banners keep your crew aligned before the climb.</p>
+      <ul class="feature-list">
+        <li><strong>Checkpoint timelines</strong> — mark base camp to summit stages.</li>
+        <li><strong>Hotel hold calculator</strong> — mock bookings with night totals.</li>
+        <li><strong>Registration radar</strong> — Char Dham routes surface official links instantly.</li>
+      </ul>
+      <a class="btn btn--secondary" href="{{ url_for('explore') }}">Browse all trails</a>
+    </div>
+    <div class="stat-board hover-lift">
+      <div class="stat-board__item">
+        <span class="stat-board__num">25</span>
+        <span class="stat-board__label">Himalayan bases</span>
+      </div>
+      <div class="stat-board__item">
+        <span class="stat-board__num">50+</span>
+        <span class="stat-board__label">Lodges mapped</span>
+      </div>
+      <div class="stat-board__item">
+        <span class="stat-board__num">150+</span>
+        <span class="stat-board__label">Trek checkpoints</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="home-destinations-data">{{ destinations|tojson }}</script>
+{% endblock %}

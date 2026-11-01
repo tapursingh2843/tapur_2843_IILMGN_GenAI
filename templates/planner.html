@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Trip Planner · DevBhoomi Escapes{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="page-hero__inner">
+    <h1 class="animate-fade-up">Trip planner</h1>
+    <p class="lead animate-fade-up delay-1">Dial in budget and days—we’ll sketch a mountain-forward itinerary with cost splits.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container planner-layout">
+    <form class="planner-form card-panel" id="planner-form">
+      <h2 class="h-card">Trip inputs</h2>
+      <label class="field">
+        <span class="field__label">Destination</span>
+        <div
+          class="dest-combobox"
+          data-dest-json="planner-destinations"
+          data-initial-slug="{{ request.args.get('destination', '') }}"
+          role="group"
+          aria-label="Search destinations"
+        >
+          <input type="hidden" name="destination" id="planner-destination" class="dest-combobox__value" required value="">
+          <input
+            type="text"
+            class="input dest-combobox__search"
+            placeholder="Search by place or state…"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+            aria-autocomplete="list"
+            aria-expanded="false"
+          >
+          <ul class="dest-combobox__list" role="listbox" hidden></ul>
+        </div>
+      </label>
+      <label class="field">
+        <span class="field__label">Total budget (₹)</span>
+        <input class="input" type="number" name="budget" id="planner-budget" min="5000" step="500"
+          value="{{ request.args.get('budget', '25000') }}" required>
+      </label>
+      <label class="field">
+        <span class="field__label">Number of days</span>
+        <input class="input" type="number" name="days" id="planner-days" min="1" max="21"
+          value="{{ request.args.get('days', '5') }}" required>
+      </label>
+      <button type="submit" class="btn btn--primary btn--block">Generate itinerary</button>
+      <p class="muted small" id="planner-hint">Estimates use static splits—adjust on the ground with local guides.</p>
+    </form>
+
+    <div class="planner-output">
+      <div class="card-panel trip-summary" id="trip-summary-card" aria-live="polite">
+        <div class="trip-summary__head">
+          <h2 class="h-card" style="margin:0">Trip summary</h2>
+          <span class="trip-summary__badge" id="trip-summary-badge">Ready</span>
+        </div>
+
+        <div class="trip-summary__grid">
+          <div class="trip-summary__kv">
+            <span class="trip-summary__k">📍 Destination</span>
+            <strong class="trip-summary__v" id="summary-destination">Select a destination</strong>
+          </div>
+          <div class="trip-summary__kv">
+            <span class="trip-summary__k">💰 Total budget</span>
+            <strong class="trip-summary__v" id="summary-budget">—</strong>
+          </div>
+          <div class="trip-summary__kv">
+            <span class="trip-summary__k">🗓️ Days</span>
+            <strong class="trip-summary__v" id="summary-days">—</strong>
+          </div>
+        </div>
+
+        <div class="trip-summary__section">
+          <div class="trip-summary__section-title">💸 Budget breakdown</div>
+          <div class="cost-bars trip-summary__bars" id="summary-bars" aria-label="Budget split bars"></div>
+          <ul class="cost-list trip-summary__list" id="summary-list" aria-label="Budget split list"></ul>
+        </div>
+
+        <div class="trip-summary__section trip-summary__two-col">
+          <div class="trip-summary__mini">
+            <div class="trip-summary__section-title">🌦️ Weather</div>
+            <p class="trip-summary__p" id="summary-weather">—</p>
+          </div>
+          <div class="trip-summary__mini">
+            <div class="trip-summary__section-title">📅 Best time to visit</div>
+            <p class="trip-summary__p" id="summary-best-time">—</p>
+          </div>
+        </div>
+
+        <div class="trip-summary__loading" id="trip-summary-loading" hidden>
+          <div class="trip-summary__spinner" aria-hidden="true"></div>
+          <p class="muted small" style="margin:0">Building your itinerary…</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="planner-destinations">{{ destinations|tojson }}</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/planner.js') }}" defer></script>
+{% endblock %}

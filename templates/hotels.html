@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Premium Hotels in Uttarakhand · DevBhoomi Escapes{% endblock %}
+
+{% block head_extra %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hotels.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="hotels-hero">
+  <div class="container">
+    <h1 class="animate-fade-up">Premium Mountain Stays</h1>
+    <p class="lead animate-fade-up delay-1" style="margin: 0 auto;">Discover luxury resorts, cozy homestays, and boutique hotels across Uttarakhand.</p>
+  </div>
+</section>
+
+<section class="container hotels-layout">
+  <aside class="filter-sidebar">
+    <div class="filter-group">
+      <div class="filter-title">Search</div>
+      <input type="text" class="input" id="hotel-search" placeholder="Search by name or location...">
+    </div>
+    
+    <div class="filter-group">
+      <div class="filter-title">Max Price per Night: <span id="price-display" style="color:var(--accent);">₹12,000</span></div>
+      <input type="range" id="price-filter" class="input-range" min="1000" max="15000" step="500" value="12000">
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Category</div>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cat-filter" value="Luxury"> Luxury
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cat-filter" value="Premium"> Premium
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cat-filter" value="Resort"> Resort
+      </label>
+      <label style="display:block; margin-bottom: 0.4rem; font-size:0.9rem;">
+        <input type="checkbox" class="cat-filter" value="Homestay"> Homestay
+      </label>
+      <label style="display:block; font-size:0.9rem;">
+        <input type="checkbox" class="cat-filter" value="Budget"> Budget
+      </label>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Min Rating: <span id="rating-display" style="color:var(--accent);">3.0</span>★</div>
+      <input type="range" id="rating-filter" class="input-range" min="3.0" max="5.0" step="0.1" value="3.0">
+    </div>
+  </aside>
+
+  <div class="hotel-results">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+      <p id="results-count" class="muted" style="margin: 0; font-weight: 500;">Loading hotels...</p>
+      <select id="hotel-sort" class="input" style="width: auto; padding: 0.4rem 0.8rem;">
+        <option value="recommended">Recommended</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+    
+    <div id="hotel-grid">
+      <!-- Hotel cards injected by JS -->
+      <div class="mrn-loading" style="display:flex; flex-direction:column; align-items:center; padding: 3rem 0; color: var(--muted);">
+        <div class="mrn-spinner" style="margin-bottom:1rem; width:30px; height:30px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 1s linear infinite;"></div>
+        Fetching properties...
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Template for hotel card -->
+<template id="hotel-card-template">
+  <div class="hotel-card">
+    <div class="hotel-card__media">
+      <img src="" alt="" loading="lazy">
+      <div class="hotel-card__badge">Category</div>
+    </div>
+    <div class="hotel-card__body">
+      <div class="hotel-card__header">
+        <div>
+          <h3 class="hotel-card__title">Hotel Name</h3>
+          <div class="hotel-card__location">📍 <span class="loc-text">Location</span></div>
+        </div>
+        <div class="hotel-card__price-box">
+          <div class="hotel-card__price">₹0</div>
+          <div class="muted small">per night</div>
+        </div>
+      </div>
+      <div class="rating" style="margin-bottom: 0.5rem;">★ 4.5</div>
+      <div class="hotel-card__amenities">
+        <!-- Amenities injected here -->
+      </div>
+      <div class="hotel-card__footer">
+        <div>
+          <div class="hotel-card__status">● Available</div>
+          <div class="muted small contact-text">📞 +91 0000000000</div>
+        </div>
+        <div class="hotel-card__actions">
+          <button type="button" class="btn btn--ghost btn--small map-btn">Map View</button>
+          <button type="button" class="btn btn--primary btn--small book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/hotels.js') }}" defer></script>
+{% endblock %}
